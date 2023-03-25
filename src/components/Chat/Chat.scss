@@ -1,4 +1,28 @@
 @import '../../Assets/sass/general.scss';
+
 .chat {
     flex: 2;
+
+    .chatInfo{
+        height: 50px;
+        background-color: #5d5b8d;
+        @include center (flex , center , space-between);
+        padding: 10px;
+        color: lightgray;
+
+        .chatIcons {
+          @include center (flex , center , space-between);
+          gap: 10px;
+
+          i {
+            font-size: 14px;
+            cursor: pointer;
+          }
+
+          svg {
+            font-size: 24px;
+            cursor: pointer;
+          }
+        }
+    }
 }
