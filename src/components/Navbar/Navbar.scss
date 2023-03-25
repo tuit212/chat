@@ -1,0 +1,31 @@
+@import '../../Assets/sass/general.scss';
+
+.navbar{
+    @include center (flex , center , space-between);
+    background-color: #2f2d52;
+    height: 60px;
+    padding: 10px;
+    color: #ddddf7;
+
+    .logo {
+        font-weight: bold;
+    }
+
+    .user {
+        @include center (flex , center , none);
+        gap: 10px;
+
+        img {
+            background-color: #ddddf7;
+            height: 24px;
+            width: 24px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .buttons{
+            font-size: 10px;
+            background-color: #5d5b8d;
+        }
+    }
+}
