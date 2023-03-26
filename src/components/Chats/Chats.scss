@@ -1,6 +1,8 @@
 @import '../../Assets/sass/general.scss';
 
 .chats {
+    height: calc(100% - 105px);
+    overflow: auto;
 
     .userChat {
         @include center (flex , center , none);
